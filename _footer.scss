@@ -1,0 +1,141 @@
+.footer {
+  height: 40vh;
+  width: 100%;
+  padding: 5rem 3rem;
+  background-image: url(./img/burgundy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  color: rgb(252, 236, 241);
+
+  &__h1 {
+    font-size: 2rem;
+    font-weight: bold;
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+
+    // @media screen and (min-width: 701px) and (max-width: 900px) {
+    //   font-size: 2rem;
+    //   font-weight: bold;
+    // }
+  }
+
+  &__ul {
+    padding-top: 1rem;
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      padding-top: 3px;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      padding-top: 5px;
+    }
+  }
+  &__li,
+  &__p {
+    line-height: 2.2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    list-style: none;
+    color: rgb(248, 204, 248);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      color: rgb(252, 249, 251);
+      background-color: rgba(153, 2, 77, 0.76);
+      transform: translateX(1rem) scale(1.03);
+    }
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      font-weight: 500;
+    }
+  }
+
+  &__p {
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+
+    @media screen and (min-width: 300px) and (max-width: 500px) {
+      font-size: 1rem;
+      margin-right: 2px;
+    }
+    @media screen and (min-width: 501px) and (max-width: 1023px) {
+      font-size: 1.6rem;
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 500px) {
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: grid;
+    //  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    // grid-template-rows: repeat(3, minmax(10rem, 1fr))
+    grid-template-rows: repeat(2, minmax(15rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 1rem;
+    // flex-direction: column;
+    height: auto;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: grid;
+    //  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    // grid-template-rows: repeat(3, minmax(10rem, 1fr))
+    grid-template-rows: repeat(2, minmax(15rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    // flex-direction: column;
+    height: auto;
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 1023px) {
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: grid;
+    //  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    // grid-template-rows: repeat(3, minmax(10rem, 1fr))
+    grid-template-rows: repeat(2, minmax(15rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    // flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}

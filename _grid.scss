@@ -1,0 +1,279 @@
+.section2 {
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  // border: 3px solid green;
+}
+
+.line {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-top: 10px solid rgb(161, 2, 76);
+  /* height: 3rem; */
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.text {
+  margin-top: 2px;
+  margin-bottom: 1rem;
+
+  &-p {
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(119, 2, 56);
+  }
+}
+
+.grid {
+  height: auto;
+  display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(20rem, 1fr));
+  grid-template-rows: repeat(2, minmax(40rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  //background-color: aqua;
+
+  &-box {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(247, 246, 246, 0.781), 0px 0px 15px #d4d3d3b0;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(20rem, 1fr));
+    // border-radius: 0.8rem;
+    padding: 1rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(82, 81, 81, 0.781), 0px 0px 15px #330110b0;
+      transform: scale(1.03) translateY(-5px);
+    }
+
+    // @media screen and (min-width: 300px) and (max-width: 350px) {
+    // }
+  }
+
+  &-img {
+    //background-color: red;
+    text-align: center;
+    margin: 1rem auto;
+
+    &__img {
+      height: 18rem;
+      width: 100%;
+      //position: relative;
+      object-fit: cover; // the code below alows the img to ocupy the exact specified cell without overflowing
+      display: block;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &-text {
+    // background-color: blue;
+    //@debug text-align: center;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(6rem, 1fr));
+
+    &__price {
+      //  background-color: rgb(9, 255, 0);
+      padding-top: 2rem;
+      padding-bottom: 0.5rem;
+
+      &-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+    }
+
+    &__line {
+      margin-top: 0.8rem;
+      //padding-bottom: 0.5rem;
+      border-top: 0.8px solid rgb(209, 208, 209);
+      /* height: 3rem; */
+      text-align: center;
+      display: block;
+      width: 100%;
+      // background-color: yellow;
+    }
+
+    &__p {
+      // background-color: rgb(255, 0, 234);
+      padding-top: 1rem;
+
+      &-p {
+        font-size: 1.5rem;
+        font-family: "Times New Roman", Times, serif;
+        line-height: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &__btn {
+      // background-color: brown;
+      padding-top: 2rem;
+
+      &-btn {
+        padding: 1rem 2rem;
+        background-color: rgb(153, 2, 78);
+        color: white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        &:hover {
+          background-color: rgb(212, 4, 108);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: repeat(2, minmax(18rem, 1fr));
+    // grid-template-rows: repeat(4, minmax(38rem, 1fr));
+    // grid-column-gap: 2rem;
+    // grid-row-gap: 2rem;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    grid-template-rows: repeat(4, minmax(40rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 900px) {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    grid-template-rows: repeat(4, minmax(40rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1000px) {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-rows: repeat(3, minmax(40rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+}
+
+.gridd {
+  margin-top: 3rem;
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  // grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  grid-template-rows: repeat(4, minmax(40rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  //background-color: aqua;
+
+  &-box {
+    background-color: rgb(252, 213, 248);
+    box-shadow: 0px 0px 5px rgba(247, 246, 246, 0.781), 0px 0px 15px #d4d3d3b0;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 100px;
+    // border-radius: 0.8rem;
+    padding: 1rem;
+
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(82, 81, 81, 0.781), 0px 0px 15px #330110b0;
+      transform: scale(1.03) translateY(-5px);
+    }
+  }
+
+  &-img {
+    //background-color: red;
+    text-align: center;
+    margin: 1rem;
+
+    &__img {
+      height: 29rem;
+      width: 100%;
+      //position: relative;
+      object-fit: cover; // the code below alows the img to ocupy the exact specified cell without overflowing
+      display: block;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &-text {
+    // background-color: blue;
+    //@debug text-align: center;
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(5rem, 1fr));
+    text-align: center;
+
+    &__price {
+      //  background-color: rgb(9, 255, 0);
+      width: 100%;
+      padding-top: 1rem;
+      margin-bottom: 0.5rem;
+      background-color: rgb(153, 2, 78);
+      //     color: white;
+
+      &-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    &__text {
+      background-color: rgb(248, 162, 241);
+      padding-top: 1rem;
+      margin-top: 1rem;
+
+      &-h1 {
+        font-size: 2.5rem;
+        font-family: "Times New Roman", Times, serif;
+        //line-height: 2rem;
+        font-weight: 600;
+        padding: 0.5rem;
+      }
+    }
+
+    // &__btn {
+    //   // background-color: brown;
+    //   padding-top: 2rem;
+
+    //   &-btn {
+    //     padding: 1rem 2rem;
+    //     background-color: rgb(153, 2, 78);
+    //     color: white;
+    //     text-decoration: none;
+    //     font-size: 1.6rem;
+    //     font-weight: 600;
+
+    //     &:hover {
+    //       background-color: rgb(212, 4, 108);
+    //     }
+    //   }
+    // }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: repeat(2, minmax(18rem, 1fr));
+    // grid-template-rows: repeat(4, minmax(38rem, 1fr));
+    // grid-column-gap: 2rem;
+    // grid-row-gap: 2rem;
+  }
+}
